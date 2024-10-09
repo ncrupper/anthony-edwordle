@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Edwordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Anthony Edwordle</h1>
+        <img src="anthony-edwards.png" alt="Anthony Edwards" width="150">
+    </header>
+
+    <div id="container">
+        <!-- Player guess input fields -->
+        <div class="guess-box" id="ppg-box">
+            <label for="ppg">Points per Game (PPG):</label>
+            <input type="number" id="ppg" name="ppg" placeholder="Enter PPG">
+            <span class="tip">Yellow = +/- 5, Green = Exact</span>
+        </div>
+        <!-- Repeat similar structure for other criteria... -->
+        <div class="guess-box" id="team-box">
+            <label for="team">Team:</label>
+            <input type="text" id="team" name="team" placeholder="Enter Team">
+            <span class="tip">Yellow = Correct Division, Green = Exact Team</span>
+        </div>
+        <div class="guess-box" id="position-box">
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" placeholder="Enter Position">
+            <span class="tip">Green = Correct, Arrow = Closer Position</span>
+        </div>
+    </div>
+
+    <button id="submit-button">Submit Guess</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

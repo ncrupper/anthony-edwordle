@@ -1,0 +1,53 @@
+body {
+    background-color: darkblue;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+#container {
+    margin-top: 40px;
+}
+
+.guess-box {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid white;
+    display: inline-block;
+    width: 200px;
+}
+
+.tip {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.correct {
+    background-color: green;
+}
+
+.close {
+    background-color: yellow;
+}
+
+.arrow-up::after {
+    content: '⬆';
+}
+
+.arrow-down::after {
+    content: '⬇';
+}
+
+#submit-button {
+    background-color: white;
+    color: darkblue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
